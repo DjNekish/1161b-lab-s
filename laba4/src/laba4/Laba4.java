@@ -3,7 +3,6 @@ package laba4;
 public class Laba4 {
 
     public static int randAB(int a,int b) 
-    //метод, который будет возвращать случайное число C из отрезка a;b
     {   int c;
         if(a > b)
         {
@@ -18,7 +17,6 @@ public class Laba4 {
     }
     
     public static int [] fill(int [] n)
-    //заполняем массив элементами c из метода randAB
     {
         for(int i = 0; i < n.length; i++)
         {
@@ -45,12 +43,12 @@ public class Laba4 {
         System.out.println();
     }
     
-    public static void bubbleSort(int[] a) //Сортировка методом пузырька
+    public static void bubble(int[] a) 
     {
         for (int i = a.length-1; i > 0; i--)
         {
             for (int j = 0; j < i; j++)
-            //cравниваем элементы попарно, если они имеют неправильный порядок, то меняем местами
+         
             {
                 if (a[j] > a[j + 1])
                 {
@@ -103,7 +101,7 @@ public class Laba4 {
         ending("Second");
         
         int[] a = arr5;
-        bubbleSort(a); //вызов метода сортировки
+        bubble(a); 
         ending("Third");
         System.out.print("I do it");
     }
